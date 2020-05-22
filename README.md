@@ -6,7 +6,7 @@
 |name|string|null: false|
 ### Association
 - belong_to :profile
-- has_many :likes
+- has_many :comments
 
 ## profilesテーブル
 |Column|Type|Options|
