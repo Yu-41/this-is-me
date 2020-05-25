@@ -12,7 +12,7 @@
         %a#navbarDropdown.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
           Dropdown
         .dropdown-menu{"aria-labelledby" => "navbarDropdown"}
-          %a.dropdown-item{:href => "#"} Action
+          %a.dropdown-item{:href => edit_user_path(current_user)} プロフィール編集
           %a.dropdown-item{:href => "#"} Another action
           .dropdown-divider
           %a.dropdown-item{:href => "#"} Something else here
@@ -39,7 +39,7 @@
         %img.profile-image{:alt => "", :src => "/assets/test_image.jpg"}/
       .header-profile__right 
         %div
-          %h6 ユーザー名：Testman
+          %h6= current_user.name
         %div
           %h6 ウェブサイト：Twitter
   .contents
