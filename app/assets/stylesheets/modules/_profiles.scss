@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 100vw;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  background-color: #e6fcfa;
+  // .topbar {
+  //   background-color: #5DE3E3;
+  //   height: 60px;
+  //   .topbar-logo {
+  //     float: left;
+  //     padding: 0 10px;
+  //     line-height: 60px;
+  //     font-weight:bold
+  //   }
+  //   .topbar-navi__left-box {
+  //     margin: 0;
+  //     padding: 0;
+  //     list-style: none;
+  //     line-height: 60px;
+  //     .topbar-navi__left-box__list {
+  //       float: left;
+  //       padding-right: 10px;
+  //     }
+  //   }
+  //   .topbar-navi__right-box {
+  //     margin: 0;
+  //     padding: 0;
+  //     list-style: none;
+  //     line-height: 60px;
+  //     .topbar-navi__right-box__list {
+  //       float: right;
+  //       padding-right: 10px;
+  //     }
+  //   }
+  // }
+
+  .container {
+    margin: 20px auto;
+    width: 730px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    .header {
+      .header-name {
+        margin: 0 0 8px 0;
+        padding: 5px 0 5px 28px;
+        border: 1px solid #ddd;
+        background-color: #f6f6f6;
+        color: #333;
+        font-size: 20px;
+        line-height: 20px;
+        border-radius: 4px;
+      }
+      .header-profile {
+        display: flex;
+        justify-content: space-around;
+        padding: 30px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        margin-bottom: 20px;
+        .header-profile__left {
+          .profile-image {
+            height: 150px;
+            width: 250px;
+          }
+        }
+        .header-profile__right {
+          padding-top: 30px;
+          div{
+            padding-top: 8px;
+            margin-bottom: 20px;
+            border-top: 1px double #ddd;
+            border-bottom: 1px double #ddd;
+          }
+        }
+      }
+    }
+  }
+    .contents {
+      .contents-wrapper {
+        padding: 30px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        .contents-profile {
+          &__box {
+            margin-bottom: 20px;
+            &__description-title {
+              border-bottom: 1px solid #ddd;
+            }
+            &__description-content {
+
+            }
+            &__paragraph-title {
+              border-bottom: 1px solid #ddd;
+            }
+            &__paragraph-content {
+
+            }
+          }
+        }
+      }
+    }
+
+  .footer {
+    background-color: #87D6D6;
+    margin: 0;
+    padding: 20px 0;
+    height: 45px;
+    .footer__app-name {
+      color: white;
+      text-align: center;
+      line-height: 5px;
+    }
+  }
+}
+
+
