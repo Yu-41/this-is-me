@@ -6,7 +6,7 @@
 |name|string|null: false|
 |image|string|null: false|
 ### Association
-- belong_to :profile
+- belong_to :content
 
 ## contentsテーブル
 |Column|Type|Options|
