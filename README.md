@@ -5,13 +5,6 @@
 |password|string|null: false|
 |name|string|null: false|
 |image|string|null: false|
+|content|text||
 ### Association
-- belong_to :content
-
-## contentsテーブル
-|Column|Type|Options|
-|------|----|-------|
-|text|text||
-|user_id|integer|null: false, foreign_key: true|
-### Association
-- belongs_to :user
+- 

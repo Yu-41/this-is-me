@@ -1,4 +1,4 @@
-%nav.navbar.navbar-expand-lg.navbar-light{:style => "background-color: #5DE3E3;"}
+%nav.navbar.navbar-expand-lg.navbar-light{:style => "background-color: #87e6e6;"}
   %a.navbar-brand{:href => "#"} ThisIsMe
   %button.navbar-toggler{"aria-controls" => "navbarSupportedContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarSupportedContent", "data-toggle" => "collapse", :type => "button"}
     %span.navbar-toggler-icon
@@ -47,10 +47,6 @@
       .contents-profile
         .contents-profile__box
           .contents-profile__box__description-title 自己紹介
-          .contents-profile__box__description-content Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        .contents-profile__box
-          .contents-profile__box__paragraph-title もっと自己紹介
-          .contents-profile__box__paragraph-content
-            Ut lectus arcu bibendum at varius vel pharetra. Sodales neque sodales ut etiam sit amet. Tincidunt ornare massa eget egestas purus viverra accumsan in. Vestibulum mattis ullamcorper velit sed. Sit amet risus nullam eget felis eget nunc lobortis. Pellentesque massa placerat duis ultricies lacus. Et ultrices neque ornare aenean euismod elementum nisi quis. Velit scelerisque in dictum non consectetur a erat. Morbi tristique senectus et netus et malesuada. Odio facilisis mauris sit amet massa vitae tortor condimentum lacinia. Tortor condimentum lacinia quis vel eros. Ut faucibus pulvinar elementum integer enim neque. Lacus vel facilisis volutpat est.
+          .contents-profile__box__description-content= current_user.content
 .footer
   %p.footer__app-name ThisIsMe by Yu Nakajima
