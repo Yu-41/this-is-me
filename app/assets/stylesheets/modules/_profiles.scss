@@ -65,13 +65,14 @@
         margin-bottom: 20px;
         .header-profile__left {
           .profile-image {
-            height: 150px;
-            width: 250px;
+
           }
         }
         .header-profile__right {
           padding-top: 30px;
+          padding-left: 10px;
           div{
+            width: 300px;
             padding-top: 8px;
             margin-bottom: 20px;
             border-top: 1px double #ddd;

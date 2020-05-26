@@ -36,7 +36,7 @@
     %h1.header-name Testman's Profile
     .header-profile
       .header-profile__left
-        %img.profile-image{:alt => "", :src => "/assets/test_image.jpg"}/
+        %img.profile-image= image_tag current_user.image.url
       .header-profile__right 
         %div
           %h6= current_user.name

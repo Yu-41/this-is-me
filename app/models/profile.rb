@@ -1,4 +1,4 @@
 class Profile < ApplicationRecord
-  belongs_to :user
-  validates :content, presence: true, unless: :image?
+  # belongs_to :user
+
 end
