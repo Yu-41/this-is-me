@@ -4,11 +4,11 @@
 |email|string|null: false|
 |password|string|null: false|
 |name|string|null: false|
-|image|string||
+|image|string|null: false|
 ### Association
 - belong_to :profile
 
-## profilesテーブル
+## contentsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |text|text||
