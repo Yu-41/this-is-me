@@ -1,4 +1,8 @@
 class UsersController < ApplicationController
+  # def search
+  #   @users = User.search(params[:qkeyword])
+  # end
+  
   def edit
   end
 
@@ -13,6 +17,6 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:name, :email, :image, :content)
+    params.require(:user).permit(:name, :email, :image, :content, :link)
   end
 end

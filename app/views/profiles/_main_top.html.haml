@@ -1,11 +1,11 @@
 %nav.navbar.navbar-expand-lg.navbar-light{:style => "background-color: #87e6e6;"}
-  %a.navbar-brand{:href => "#"} ThisIsMe
+  %a.navbar-brand{:href => root_path} ThisIsMe
   %button.navbar-toggler{"aria-controls" => "navbarSupportedContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarSupportedContent", "data-toggle" => "collapse", :type => "button"}
     %span.navbar-toggler-icon
   #navbarSupportedContent.collapse.navbar-collapse
     %ul.navbar-nav.mr-auto
       %li.nav-item.active
-        %a.nav-link{:href => "#"}
+        %a.nav-link{:href => root_path}
           Home
           %span.sr-only (current)
       %li.nav-item.dropdown
@@ -33,15 +33,15 @@
 -#       %input.btn.btn-info{:type => "button", :value => "Logout"}/
 .container
   .header
-    %h1.header-name Testman's Profile
+    %h1.header-name= "#{current_user.name}'s Profile"
     .header-profile
       .header-profile__left
         %img.profile-image= image_tag current_user.image.url
       .header-profile__right 
         %div
-          %h6= current_user.name
+          %h6= "名前：#{current_user.name}"
         %div
-          %h6 ウェブサイト：Twitter
+          %h6= link_to "#{current_user.link}", "#{current_user.link}"
   .contents
     .contents-wrapper
       .contents-profile

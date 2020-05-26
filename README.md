@@ -6,5 +6,6 @@
 |name|string|null: false|
 |image|string|null: false|
 |content|text||
+|link|text||
 ### Association
 - 

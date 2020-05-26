@@ -24,6 +24,11 @@
             = f.file_field :image
         .field
           .field-label
+            = f.label :link
+          .field-input
+            = f.text_field :link
+        .field
+          .field-label
             = f.label :content
           .field-input
             = f.text_area :content, :size => "51x15"
