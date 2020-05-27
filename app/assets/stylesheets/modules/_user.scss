@@ -159,8 +159,25 @@
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 6px;
+    .search-title {
+      margin: 0 0 8px 0;
+      padding: 5px 0 5px 28px;
+      border: 1px solid #ddd;
+      background-color: #f6f6f6;
+      color: #333;
+      font-size: 20px;
+      line-height: 20px;
+      border-radius: 4px;
+    }
     .search-result {
-      margin-top: 20px;
+      margin: 20px 0 8px 0;
+      padding: 5px 0 5px 28px;
+      border: 1px solid #ddd;
+      background-color: #f6f6f6;
+      color: #333;
+      font-size: 20px;
+      line-height: 20px;
+      border-radius: 4px;
       &__body {
         &__container {
           margin-top: 10px;

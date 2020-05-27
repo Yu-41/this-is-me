@@ -21,11 +21,11 @@
       %a.btn.btn-outline-info.my-2.my-sm-0{:href => search_users_path, :role => "button"} ユーザー検索
 .wrapper-search
   .container-search
-    %h3 ユーザー検索
+    %h4.search-title ユーザー検索
     = form_with url: search_users_path, method: :get, local: true do |f|
       = f.text_field :name, :class => 'form-control mb-2', :placeholder => '入力してください'
       = f.submit :Search, class: 'btn btn-info'
-    %h4.search-result 検索結果
+    %h5.search-result 検索結果
     .search-result__body
       - @users.each do |user|
         = link_to user_path(user.id) do
