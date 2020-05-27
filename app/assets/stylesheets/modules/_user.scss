@@ -144,3 +144,54 @@
     font-size: 13px;
   }
 }
+
+.wrapper-search {
+  margin: 0 auto;
+  padding: 1px 0 0 0;
+  width: 100vw;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  background-color: #e6fcfa;
+  .container-search {
+    margin: 20px auto;
+    height: 100vh;
+    width: 730px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    .search-result {
+      margin-top: 20px;
+      &__body {
+        &__container {
+          margin-top: 10px;
+          border: 1px solid #ddd;
+          border-radius: 6px;
+          padding: 10px;
+          background-color: #f6f6f6;
+          display: flex;
+          &__images {
+            img {
+              width: 50px;
+              height: 50px;
+            }
+          }
+          &__names {
+            margin-left: 10px;
+            line-height: 50px;
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    background-color: #87D6D6;
+    margin: 0;
+    padding: 20px 0;
+    height: 45px;
+    .footer__app-name {
+      color: white;
+      text-align: center;
+      line-height: 5px;
+    }
+  }
+}

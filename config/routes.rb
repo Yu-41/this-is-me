@@ -4,4 +4,7 @@ Rails.application.routes.draw do
   root "profiles#index"
   resources :users, only: [:edit, :update]
     # resources :profiles
+  resources :users do
+    get :search, on: :collection
+  end
 end

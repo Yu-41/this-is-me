@@ -19,22 +19,3 @@
     %form.form-inline.my-2.my-lg-0
       -# %input.form-control.mr-sm-2{"aria-label" => "Search", :placeholder => "Search user", :type => "search"}/
       %a.btn.btn-outline-info.my-2.my-sm-0{:href => search_users_path, :role => "button"} ユーザー検索
-.container
-  .header
-    %h1.header-name= "#{current_user.name}'s Profile"
-    .header-profile
-      .header-profile__left
-        %img.profile-image= image_tag current_user.image.url
-      .header-profile__right 
-        %div
-          %h6= "名前：#{current_user.name}"
-        %div
-          %h6= link_to "#{current_user.link}", "#{current_user.link}"
-  .contents
-    .contents-wrapper
-      .contents-profile
-        .contents-profile__box
-          .contents-profile__box__description-title 自己紹介
-          .contents-profile__box__description-content= current_user.content
-.footer
-  %p.footer__app-name ThisIsMe by Yu Nakajima
