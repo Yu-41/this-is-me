@@ -1,4 +1,6 @@
 class UsersController < ApplicationController
+  before_action :move_to_index, except: [:index, :show]
+
   def search
     if params[:name].present?
       @users = User.where('name LIKE ?', "%#{params[:name]}%")
@@ -26,5 +28,9 @@ class UsersController < ApplicationController
 
   def user_params
     params.require(:user).permit(:name, :email, :image, :content, :link)
+  end
+
+  def move_to_index
+    redirect_to action: :index unless user_signed_in?
   end
 end
