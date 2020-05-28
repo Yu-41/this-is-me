@@ -33,9 +33,12 @@
         border: 1px solid #ddd;
         border-radius: 4px;
         margin-bottom: 20px;
+        @media screen and (max-width: 767px) {
+          display: block;
+        }
         &__left {
-          &__profile-image {
-
+          @media screen and (max-width: 767px) {
+            text-align: center;
           }
         }
         &__right {
