@@ -24,7 +24,7 @@
     %h1.header-name= "#{current_user.name}'s Profile"
     .header-profile
       .header-profile__left
-        %img.profile-image= image_tag current_user.image.url
+        %img.header-profile__left__profile-image= image_tag current_user.image.url
       .header-profile__right 
         %div
           %h6= "名前：#{current_user.name}"

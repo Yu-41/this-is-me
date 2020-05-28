@@ -33,12 +33,12 @@
         border: 1px solid #ddd;
         border-radius: 4px;
         margin-bottom: 20px;
-        .header-profile__left {
-          .profile-image {
+        &__left {
+          &__profile-image {
 
           }
         }
-        .header-profile__right {
+        &__right {
           padding-top: 30px;
           padding-left: 10px;
           div{
