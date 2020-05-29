@@ -17,3 +17,8 @@
 //= require jquery3
 //= require popper
 //= require bootstrap-sprockets
+//= require zeroclipboard
+
+$(document).ready(function() {
+  var clip = new ZeroClipboard($("#d_clip_button"))
+});

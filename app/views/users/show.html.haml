@@ -37,5 +37,7 @@
           .contents-profile__box
             .contents-profile__box__description-title 自己紹介
             .contents-profile__box__description-content= @user.content
+        %button#d_clip_button.my_clip_button.btn.btn-outline-info.my-2.my-sm-0{"data-clipboard-target" => "#{request.original_url}", "data-clipboard-text" => "Default clipboard text from attribute"} Copy URL
+
   .footer
     %p.footer__app-name ThisIsMe by Yu Nakajima
