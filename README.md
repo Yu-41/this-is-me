@@ -1,4 +1,4 @@
-## タイトル：ThisIsMe
+# タイトル：ThisIsMe
 ・URL：
 　テストアカウント
 　　ID：
@@ -9,14 +9,6 @@
 　●概要：
 　●実装機能：
 ・企画背景
-フリマアプリコピーサイト
-URL:
-GitURL:
-Basic認証IDPASS:
-テストIDPASS:
-・開発環境　言語：　ツール:　DB:　サーバー：
-・開発メンバー　名
-・担当実装機能
 
 ## usersテーブル
 |Column|Type|Options|
