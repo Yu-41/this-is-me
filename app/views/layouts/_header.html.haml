@@ -14,8 +14,7 @@
         .dropdown-menu{"aria-labelledby" => "navbarDropdown"}
           %a.dropdown-item{:href => edit_user_path(current_user)} プロフィール編集
           %a.dropdown-item{:href => search_users_path} ユーザー検索
-          -# .dropdown-divider
-          -# %a.dropdown-item{:href => "#"} Something else here
+          %a.dropdown-item{:href => destroy_user_session_path} ログアウト
     %form.form-inline.my-2.my-lg-0
       -# %input.form-control.mr-sm-2{"aria-label" => "Search", :placeholder => "Search user", :type => "search"}/
-      %a.btn.btn-outline-info.my-2.my-sm-0{:href => search_users_path, :role => "button"} ユーザー検索
+      %a.btn.btn-outline-info.my-2.my-sm-0{:href => "#", :role => "button"}= current_user.name

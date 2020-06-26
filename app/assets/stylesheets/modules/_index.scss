@@ -1,0 +1,32 @@
+.index-header {
+  &-name {
+    margin: 0 0 15px 0;
+    padding: 10px 0 10px 28px;
+    background-color: #87D6D6;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 20px;
+    border-radius: 4px;
+  }
+  &-profile {
+    text-align: center;
+    margin: 0 0 15px 0;
+    &__profile-image {
+      height: 450px;
+      width: 685px;
+      border-radius: 6px;
+    }
+  }
+}
+
+.index-contents-profile {
+  &__box {
+    margin-bottom: 20px;
+    &__description-title {
+      font-size: 18px;
+      font-weight: bold;
+      border-bottom: 1px solid #ddd;
+    }
+  }
+}
