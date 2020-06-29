@@ -1,25 +1,6 @@
 .wrapper
-  %nav.navbar.navbar-expand-lg.navbar-light{:style => "background-color: #87e6e6;"}
-    %a.navbar-brand{:href => root_path} ThisIsMe
-    %button.navbar-toggler{"aria-controls" => "navbarSupportedContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarSupportedContent", "data-toggle" => "collapse", :type => "button"}
-      %span.navbar-toggler-icon
-    #navbarSupportedContent.collapse.navbar-collapse
-      %ul.navbar-nav.mr-auto
-        %li.nav-item.active
-          %a.nav-link{:href => root_path}
-            Home
-            %span.sr-only (current)
-        %li.nav-item.dropdown
-          %a#navbarDropdown.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
-            機能
-          .dropdown-menu{"aria-labelledby" => "navbarDropdown"}
-            %a.dropdown-item{:href => edit_user_path(current_user)} プロフィール編集
-            %a.dropdown-item{:href => search_users_path} ユーザー検索
-            -# .dropdown-divider
-            -# %a.dropdown-item{:href => "#"} Something else here
-      %form.form-inline.my-2.my-lg-0
-        -# %input.form-control.mr-sm-2{"aria-label" => "Search", :placeholder => "Search user", :type => "search"}/
-        %a.btn.btn-outline-info.my-2.my-sm-0{:href => search_users_path, :role => "button"} ユーザー検索
+  = render "layouts/header"
+  
   .container
     .header
       %h1.header-name= "#{@user.name}'s Profile"
@@ -37,7 +18,9 @@
           .contents-profile__box
             .contents-profile__box__description-title 自己紹介
             .contents-profile__box__description-content= @user.content
-        %button#d_clip_button.my_clip_button.btn.btn-outline-info.my-2.my-sm-0{"data-clipboard-target" => "#{request.original_url}", "data-clipboard-text" => "Default clipboard text from attribute"} Copy URL
+        -# %button#d_clip_button.my_clip_button.btn.btn-outline-info.my-2.my-sm-0{"data-clipboard-target" => "#{request.url}"} Copy URL
+        %textarea#fe_text{:cols => "30", :name => "", :rows => "1"}=request.url
+        %button#d_clip_button.my_clip_button.btn.btn-outline-info.my-2.my-sm-0{"data-clipboard-target" => "fe_text", "data-clipboard-text" => "Default clipboard text from attribute"}
+          %b コピーする
 
-  .footer
-    %p.footer__app-name ThisIsMe by Yu Nakajima
+  = render "layouts/footer"

@@ -20,5 +20,8 @@
 //= require zeroclipboard
 
 $(document).ready(function() {
-  var clip = new ZeroClipboard($("#d_clip_button"))
+  var clip = new ZeroClipboard($("#d_clip_button"));
+  clip.on("clip", function() {
+    btn.dataset.clipboardText = text.value;
+  });
 });
