@@ -20,7 +20,7 @@
             .contents-profile__box__description-content= @user.content
         -# %button#d_clip_button.my_clip_button.btn.btn-outline-info.my-2.my-sm-0{"data-clipboard-target" => "#{request.url}"} Copy URL
         %textarea#fe_text{:cols => "30", :name => "", :rows => "1"}=request.url
-        %button#d_clip_button.my_clip_button.btn.btn-outline-info.my-2.my-sm-0{"data-clipboard-target" => "fe_text", "data-clipboard-text" => "Default clipboard text from attribute"}
+        %button.clipboard-btn.my_clip_button.btn.btn-outline-info.my-2.my-sm-0{"data-clipboard-target" => "#fe_text", "data-clipboard-action" => "copy"}
           %b コピーする
 
   = render "layouts/footer"
