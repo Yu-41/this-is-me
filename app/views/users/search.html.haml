@@ -9,7 +9,7 @@
     %h5.search-result 検索結果
     .search-result__body
       - @users.each do |user|
-        = link_to user_path(user.id) do
+        = link_to user_path(user.id), "data-turbolinks" => "false" do
           .search-result__body__container
             .search-result__body__container__images= image_tag user.image.url
             .search-result__body__container__names= user.name
