@@ -4,7 +4,7 @@
 　　ID：test@gmail.com  
 　　password：test-pass  
 ・GitURL：https://github.com/Yu-41/this-is-me/  
-・開発環境：HTML, SCSS, Ruby, Ruby on Rails, MySQL or PostgreSQL, Git, GitHub（言語、ツール、OS、DB、サーバー）, Heroku  
+・開発環境：HTML, SCSS, Ruby, Ruby on Rails, MySQL, Git, GitHub（言語、ツール、OS、DB、サーバー）, Bootstrap, Heroku  
 ・内容  
 　●概要：自分のプロフィールを記載し、ページをシェアして使用するアプリです。  
 　●実装機能：ユーザー登録、ログイン・ログアウト、プロフィール登録・編集、画像投稿、ユーザー検索  
