@@ -1,3 +1,17 @@
+.copyarea-wrapper {
+  display: flex;
+  #fe_text {
+    padding: 10px;
+    letter-spacing: 1px;
+    border-color: #e8e8e8;
+  } 
+  
+  #copy-button {
+    margin-left: 8px;
+  }
+}
+
+
 .account-page {
   .account-page__inner {
     width: 980px;

@@ -5,17 +5,26 @@
   #navbarSupportedContent.collapse.navbar-collapse
     %ul.navbar-nav.mr-auto
       %li.nav-item.active
-        %a.nav-link{:href => root_path}
-          Home
+        %a.nav-link{:href => user_path(current_user.id), "data-turbolinks" => "false"}
+          = current_user.name
+          のプロフィール
           %span.sr-only (current)
-      %li.nav-item.dropdown
-        %a#navbarDropdown.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
-          機能
-        .dropdown-menu{"aria-labelledby" => "navbarDropdown"}
-          %a.dropdown-item{:href => edit_user_path(current_user)} プロフィール編集
-          %a.dropdown-item{:href => search_users_path} ユーザー検索
+      %li.nav-item.active
+        %a.nav-link{:href => edit_user_path(current_user)}
+          プロフィール編集
+          %span.sr-only (current)
+      %li.nav-item.active
+        %a.nav-link{:href => search_users_path}
+          ユーザー検索
+          %span.sr-only (current)
+      -# %li.nav-item.dropdown
+      -#   %a#navbarDropdown.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+      -#     機能
+      -#   .dropdown-menu{"aria-labelledby" => "navbarDropdown"}
+      -#     %a.dropdown-item{:href => edit_user_path(current_user)} プロフィール編集
+      -#     %a.dropdown-item{:href => search_users_path} ユーザー検索
           -# %a.dropdown-item{:href => destroy_user_session_path} ログアウト
-    %form.form-inline.my-2.my-lg-0
-      -# %input.form-control.mr-sm-2{"aria-label" => "Search", :placeholder => "Search user", :type => "search"}/
-      %a.btn.btn-outline-info.my-2.my-sm-0{:href => user_path(current_user.id), :role => "button"}= current_user.name
+    -# %form.form-inline.my-2.my-lg-0
+    -#   -# %input.form-control.mr-sm-2{"aria-label" => "Search", :placeholder => "Search user", :type => "search"}/
+    -#   %a.btn.btn-outline-info.my-2.my-sm-0{:href => user_path(current_user.id), :role => "button"}= current_user.name
       

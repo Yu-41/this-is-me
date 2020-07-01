@@ -17,11 +17,11 @@
 //= require jquery3
 //= require popper
 //= require bootstrap-sprockets
-//= require zeroclipboard
+//= require clipboard
 
-$(document).ready(function() {
-  var clip = new ZeroClipboard($("#d_clip_button"));
-  clip.on("clip", function() {
-    btn.dataset.clipboardText = text.value;
-  });
+$(document).ready(function(){  
+  
+  var clipboard = new Clipboard('.clipboard-btn');
+  console.log(clipboard);
+	
 });
